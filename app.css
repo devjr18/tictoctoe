@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'boldpixelsx3';
+  src: url(boldpixels/BoldPixels.otf);
+}
+
+h1{
+    font-family: 'boldpixelsx3';
+    font-size: 50px;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 1) 0%,
+        rgba(255, 154, 0, 1) 10%,
+        rgba(208, 222, 33, 1) 10%,
+        rgba(79, 220, 74, 1) 10%,
+        rgba(63, 218, 216, 1) 40%,
+        rgba(47, 201, 226, 1) 50%,
+        rgba(28, 127, 238, 1) 60%,
+        rgba(95, 21, 242, 1) 40%,
+        rgba(186, 12, 248, 1) 50%,
+        rgba(251, 7, 217, 1) 30%,
+        rgba(255, 0, 0, 1) 50%
+    );
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.turn {
+    font-family: 'boldpixelsx3';
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board {
+    display: grid;
+    height: 550px;
+    width: 550px;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    border: 2px solid blue;
+    margin-top: 20px;
+}
+
+.cell {
+    font-family: 'boldpixelsx3';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;    
+    border: 2px solid blue;
+    background: white;
+    cursor: pointer;
+}
+
+.reset-btn {
+    border-radius: 10px;
+    background-color: red;
+    border: 0;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 0;
+}
+
+.reset-btn:hover {
+    background-color: rgb(143, 4, 4);
+}
